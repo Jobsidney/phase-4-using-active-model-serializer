@@ -12,7 +12,7 @@ class MoviesController < ApplicationController
   end
   def summary
     movie = Movie.find(params[:id])
-    render json: movie, serializer: MovieSummarySerializer
+    render json: movie,serializer: MovieSummarySerializer
   end
   private
 
